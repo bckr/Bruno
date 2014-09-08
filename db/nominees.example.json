@@ -1,0 +1,266 @@
+[
+      {
+            "name": "Best Motion Picture of the Year",
+            "nominees": [
+                  "American Hustle",
+                  "Captain Phillips",
+                  "Dallas Buyers Club",
+                  "Gravity",
+                  "Her",
+                  "Nebraska",
+                  "Philomena",
+                  "12 Years a Slave",
+                  "The Wolf of Wall Street"
+            ]
+      },
+
+      {
+            "name": "Best Performance by an Actor in a Leading Role",
+            "nominees": [
+                  "Christian Bale for American Hustle",
+                  "Bruce Dern for Nebraska",
+                  "Leonardo DiCaprio for The Wolf of Wall Street",
+                  "Chiwetel Ejiofor for 12 Years a Slave",
+                  "Matthew McConaughey for Dallas Buyers Club"
+            ]
+      },
+
+      {
+            "name": "Best Performance by an Actress in a Leading Role",
+            "nominees": [
+                  "Amy Adams for American Hustle",
+                  "Cate Blanchett for Blue Jasmine",
+                  "Sandra Bullock for Gravity",
+                  "Judi Dench for Philomena",
+                  "Meryl Streep for August: Osage County"
+            ]
+      },
+
+       {
+            "name": "Best Performance by an Actor in a Supporting Role",
+            "nominees": [
+                  "Barkhad Abdi for Captain Phillips",
+                  "Bradley Cooper for American Hustle",
+                  "Jonah Hill for The Wolf of Wall Street",
+                  "Michael Fassbender for 12 Years a Slave",
+                  "Jared Leto for Dallas Buyers Club"
+            ]
+      },
+
+       {
+            "name": "Best Performance by an Actress in a Supporting Role",
+            "nominees": [
+                  "Sally Hawkins for Blue Jasmine",
+                  "Julia Roberts for August: Osage County",
+                  "Lupita Nyong'o for 12 Years a Slave",
+                  "Jennifer Lawrence for American Hustle",
+                  "June Squibb for Nebraska"
+            ]
+      },
+
+       {
+            "name": "Best Achievement in Directing",
+            "nominees": [
+                  "Alfonso Cuaron for Gravity",
+                  "Steve McQueen for 12 Years a Slave",
+                  "David O. Russell for American Hustle",
+                  "Martin Scorsese for The Wolf of Wall Street",
+                  "Alexander Payne for Nebraska"
+            ]
+      },
+
+       {
+            "name": "Best Writing, Screenplay Written Directly for the Screen",
+            "nominees": [
+                  "American Hustle: Eric Warren Singer, David O. Russell",
+                  "Blue Jasmine: Woody Allen",
+                  "Her: Spike Jonze",
+                  "Nebraska: Bob Nelson",
+                  "Dallas Buyers Club: Craig Borten, Melisa Wallack"
+            ]
+      },
+
+       {
+            "name": "Best Writing, Screenplay Based on Material Previously Produced or Published",
+            "nominees": [
+                  "Before Midnight: Richard Linklater",
+                  "Captain Phillips: Billy Ray",
+                  "12 Years a Slave: John Ridley",
+                  "The Wolf of Wall Street: Terence Winter",
+                  "Philomena: Steve Coogan, Jeff Pope"
+            ]
+      },
+
+      {
+            "name": "Best Animated Feature Film of the Year",
+            "nominees": [
+                  "The Croods",
+                  "Despicable Me 2",
+                  "Ernest & Celestine",
+                  "Frozen",
+                  "The Wind Rises"
+            ]
+      },
+
+      {
+            "name": "Best Foreign Language Film of the Year",
+            "nominees": [
+                  "The Broken Circle Breakdown: Felix Van Groeningen(Belgium)",
+                  "The Missing Picture: Rithy Panh(Cambodia)",
+                  "The Hunt: Thomas Vinterberg(Denmark)",
+                  "The Great Beauty: Paolo Sorrentino(Italy)",
+                  "Omar: Hany Abu-Assad(Palestine)"
+            ]
+      },
+
+      {
+            "name": "Best Achievement in Cinematography",
+            "nominees": [
+                  "Gravity: Emmanuel Lubezki",
+                  "Inside Llewyn Davis: Bruno Delbonnel",
+                  "Nebraska: Phedon Papamichael",
+                  "Prisoners: Roger Deakins",
+                  "The Grandmaster: Philippe Le Sourd"
+            ]
+      },
+
+      {
+            "name": "Best Achievement in Editing",
+            "nominees": [
+                  "12 Years a Slave: Joe Walker",
+                  "American Hustle: Alan Baumgarten, Jay Cassidy, Crispin Struthers",
+                  "Gravity: Alfonso Cuaron, Mark Sanger",
+                  "Captain Phillips: Christopher Rouse",
+                  "Dallas Buyers Club: Martin Pensa, John Mac McMurphy"
+            ]
+      },
+      {
+            "name": "Best Achievement in Production Design",
+            "nominees": [
+                  "12 Years a Slave: Adam Stockhausen, Alice Baker",
+                  "American Hustle: Judy Becker, Heather Loeffler",
+                  "Gravity",
+                  "The Great Gatsby: Catherine Martin, Beverley Dunn",
+                  "Her: K.K. Barrett, Gene Serdena"
+            ]
+      },
+
+       {
+            "name": "Best Achievement in Costume Design",
+            "nominees": [
+                  "American Hustle: Michael Wilkinson",
+                  "The Great Gatsby: Catherine Martin",
+                  "12 Years a Slave: Patricia Norris",
+                  "The Grandmaster: William Chang",
+                  "The Invisible Woman: Michael O'Connor"
+            ]
+      },
+
+       {
+            "name": "Best Achievement in Makeup and Hairstyling",
+            "nominees": [
+                  "Dallas Buyers Club: Adruitha Lee, Robin Mathews",
+                  "Jackass Presents: Bad Grandpa: Steve Prouty",
+                  "The Lone Ranger: Joel Harlow, Gloria Pasqua Casny"
+            ]
+      },
+
+       {
+            "name": "Best Achievement in Music Written for Motion Pictures, Original Score",
+            "nominees": [
+                  "The Book Thief: John Williams",
+                  "Gravity: Steven Price",
+                  "Her: William Butler, Andy Koyama",
+                  "Saving Mr. Banks: Thomas Newman",
+                  "Philomena: Alexandre Desplat"
+            ]
+      },
+
+       {
+            "name": "Best Achievement in Music Written for Motion Pictures, Original Song",
+            "nominees": [
+                  "Despicable Me 2: Pharrell Williams - Happy",
+                  "Frozen: Kristen Anderson-Lopez, Robert Lopez - Let It Go",
+                  "Mandela: Long Walk to Freedom: Bono, Adam Clayton, The Edge, Larry Mullen Jr., Brian Burton - Ordinary Love",
+                  "Alone Yet Not Alone: Bruce Broughton - Alone Yet Not Alone",
+                  "Her: Karen O - The Moon Song"
+            ]
+      },
+
+       {
+            "name": "Best Achievement in Sound Mixing",
+            "nominees": [
+                  "Gravity: Skip Lievsay, Niv Adiri, Christopher Benstead, Chris Munro",
+                  "The Hobbit: The Desolation of Smaug: Christopher Boyes, Michael Hedges, Michael Semanick, Tony Johnson",
+                  "Captain Phillips: Chris Burdon, Mark Taylor, Mike Prestwood Smith, Chris Munro",
+                  "Inside Llewyn Davis: Skip Lievsay, Greg Orloff, Peter F. Kurland",
+                  "Lone Survivor: Andy Koyama, Beau Borders, David Brownlow"
+            ]
+      },
+
+       {
+            "name": "Best Achievement in Sound Editing",
+            "nominees": [
+                  "All Is Lost: Steve Boeddeker, Richard Hymns",
+                  "Captain Phillips: Oliver Tarney",
+                  "Gravity: Glenn Freemantle",
+                  "The Hobbit: The Desolation of Smaug: Brent Burge",
+                  "Lone Survivor: Wylie Stateman"
+            ]
+      },
+
+       {
+            "name": "Best Achievement in Visual Effects",
+            "nominees": [
+                  "Gravity: Timothy Webber, Chris Lawrence, David Shirk, Neil Corbould",
+                  "The Hobbit: The Desolation of Smaug: Joe Letteri, Eric Saindon, David Clayton, Eric Reynolds",
+                  "Iron Man 3: Christopher Townsend, Guy Williams, Erik Nash, Daniel Sudick",
+                  "The Lone Ranger: Tim Alexander, Gary Brozenich, Edson Williams, John Frazier",
+                  "Star Trek Into Darkness: Roger Guyett, Pat Tubach, Ben Grossmann, Burt Dalton"
+            ]
+      },
+
+       {
+            "name": "Best Documentary, Feature",
+            "nominees": [
+                  "The Act of Killing: Joshua Oppenheimer, Signe Byrge Sorensen",
+                  "Cutie and the Boxer: Zachary Heinzerling, Lydia Dean Pilcher",
+                  "Dirty Wars: Rick Rowley, Jeremy Scahill",
+                  "The Square: Jehane Noujaim, Karim Amer",
+                  "20 Feet from Stardom: Morgan Neville"
+            ]
+      },
+
+       {
+            "name": "Best Documentary, Short Subject",
+            "nominees": [
+                  "Cavedigger: Jeffrey Karoff",
+                  "Facing Fear: Jason Cohen",
+                  "Karama Has No Walls: Sara Ishaq",
+                  "The Lady In Number 6: Malcolm Clarke, Carl Freed",
+                  "Prison Terminal: The Last Days of Private Jack Hall: Edgar Barens"
+            ]
+      },
+
+       {
+            "name": "Best Short Film, Animated",
+            "nominees": [
+                  "Feral: Daniel Sousa, Dan Golden",
+                  "Get a Horse!: Lauren MacMullan, Dorothy McKim",
+                  "Mr Hublot: Laurent Witz, Alexandre Espigares",
+                  "Possessions: Shuhei Morita",
+                  "Room on the Broom (TV): Max Lang, Jan Lachauer"
+            ]
+      },
+
+       {
+            "name": "Best Short Film, Live Action",
+            "nominees": [
+                  "That Wasn't Me: Esteban Crespo",
+                  "Just Before Losing Everything: Xavier Legrand",
+                  "Helium: Anders Walter",
+                  "Do I Have to Take Care of Everything?: Selma Vilhunen",
+                  "The Voorman Problem: Mark Gill"
+            ]
+      }
+]
