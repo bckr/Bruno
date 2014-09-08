@@ -7,7 +7,7 @@ Bruno lets you set up your own polling system for award shows like the Oscars. A
 
 ![](http://nilsbecker.s3.amazonaws.com/bruno_preview.png)
 
-## Initial Setup
+## Setup
 
 1. You need to register a new [Twitter Application](https://apps.twitter.com/) to get your own API key and secret. The Callback URL should have the following format: `http://yourdomain.com/auth/twitter/callback`
 
