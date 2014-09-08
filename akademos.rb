@@ -7,7 +7,7 @@ require 'data_mapper'
 require 'haml'
 require_relative 'model'
 
-class Voty < Sinatra::Base
+class Akademos < Sinatra::Base
   register Sinatra::ConfigFile
   register(Sinatra::Cache)
 
