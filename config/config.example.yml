@@ -1,0 +1,16 @@
+page_titel:           Your Page Title
+domain:               your-domain-name.com
+session_secret:       totallyrandomsessionsecret
+
+admin_twitter_handle: AdminTwitterHandle
+
+twitter_api_key:			YourTwitterAPIKey
+twitter_api_secret:   YourTwitterAPISecret
+
+database_adapter:     postgres
+database_host:        localhost
+database_user:        dbuser
+database_name:        dbname
+database_password:    dbpassword
+
+
