@@ -1,7 +1,7 @@
 Bruno
 =======
 
-Bruno lets you set up your own polling system for award shows like the Oscars. Authentication is handled via Twitter. Bruno uses the [Sinatra Framework](http://www.sinatrarb.com/) and [Postgres](http://www.postgresql.org/) as its database. For a live example take a look at [Oscar Picks](http://oscar-picks.com). This is my first Ruby project ✌️
+Bruno lets you set up your own polling system for award shows like the Oscars. Authentication is handled via Twitter. Bruno uses the [Sinatra Framework](http://www.sinatrarb.com/) and [Postgres](http://www.postgresql.org/) as its database. For a live example take a look at [Oscar Picks](http://oscar-picks.com).
 
 ## Example
 
