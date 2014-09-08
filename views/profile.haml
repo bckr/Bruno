@@ -1,0 +1,52 @@
+.span.well{style: "margin-top: 33px"}
+  %center
+    %img.img-circle.dp{height: "73", name: "-", src: "#{@user.image_url}", width: "73"}
+    - if @user == @auth_user
+      %h4="Your Profile"
+    - else
+      %h4= "#{@user.twitter_handle}"
+.panel.panel-default
+  .panel-heading
+    %p.pull-right
+      %span.glyphicon.glyphicon-user
+    %h2.panel-title About
+  %ul.list-group
+    %li.list-group-item
+      %b
+        Name:
+      %span.pull-right #{@user.name}
+    %li.list-group-item
+      %b
+        Twitter:
+      %span.pull-right
+        %a{ href: "https://twitter.com/#{@user.twitter_handle}"}
+          #{@user.twitter_handle}
+.panel.panel-default
+  .panel-heading
+    %p.pull-right
+      %span.glyphicon.glyphicon-stats
+    %h2.panel-title Statistic
+  %ul.list-group
+    %li.list-group-item
+      %b
+        Current Ranking:
+      - if !votes_are_closed?
+        %span.pull-right -
+      - else
+        %span.pull-right #{@user.ranking}
+    %li.list-group-item
+      %b
+        Correct Picks:
+      %span.pull-right="#{@user.correct_picks} / 24"
+    %li.list-group-item
+      %b
+        Correct Favourites:
+      %span.pull-right
+        %span.pull-right="#{@correct_favourites} / 24"
+%a{ href: "#{@user.twitter_handle}/picks" }
+  - if @user == @auth_user
+    .button.btn.btn-default.btn-sm{ style: "width: 100%"}="Your Picks"
+  - else
+    .button.btn.btn-default.btn-sm{ style: "width: 100%"}="#{@user.twitter_handle}'s Picks"
+%br
+%br

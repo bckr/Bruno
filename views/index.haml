@@ -1,0 +1,37 @@
+.page-header
+  %h2
+    Picks
+    %span.badge.pull-right{ :style => "margin-top: 13px"}="#{@page} / #{@max_pages}"
+- @users.each do | user |
+  .span.well
+    .media
+      %a.pull-left{href: "/#{user.twitter_handle}"}
+        %img.media-object.dp.img-circle{src: "#{user.image_url}", style: "width: 73px; height:73px;"}
+      .media-body{style: "padding-top: 10px; padding-left: 0px"}
+        %a{href: "https://twitter.com/#{user.twitter_handle}"}
+          %h3.media-heading.silentio
+            #{user.twitter_handle}
+        %h4.media-heading
+          %small #{user.name}
+          %a{href: "/#{user.twitter_handle}/picks"}
+            %span.label.label-default.pull-right= "#{user.correct_picks}/#{@number_of_categories}"
+          -if votes_are_closed?
+            -if user.ranking == 1
+              %span.label.label-success.pull-right{style: "margin-right: 5px"}="##{user.ranking}"
+            -elsif user.ranking == 2 || user.ranking == 3
+              %span.label.label-warning.pull-right{style: "margin-right: 5px"}="##{user.ranking}"
+            -else
+              %span.label.label-default.pull-right{style: "margin-right: 5px"}="##{user.ranking}"
+%ul.pager
+  - if @has_previous_page
+    %li.previous
+      %a{ :href => "/page/#{@page - 1}"}="previous"
+  - else
+    %li.previous.disabled
+      %a{ :href => "#"}="previous"
+  - if @has_next_page
+    %li.next
+      %a{ :href => "/page/#{@page + 1}"}="next"
+  - else
+    %li.next.disabled
+      %a{ :href => "#"}="next"

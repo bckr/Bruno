@@ -1,0 +1,13 @@
+.page-header
+  %h2 Lock Votes
+%form{ :action => "/admin/lock/votes", :method => "post" }
+  - if votes_are_closed?
+    %input{ :type => "checkbox", :name => "lock_votes", :value => "lock_votes", :checked => "checked"}= " Lock votes"
+    %br
+    %br
+  - else
+    %input{ :type => "checkbox", :name => "lock_votes", :value => "lock_votes"}= " Lock votes"
+    %br
+    %br
+  %button.btn.btn-default.btn{type: "submit", name: "update"} Update Settings
+%br

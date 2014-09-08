@@ -1,0 +1,66 @@
+.span.well{style: "margin-top: 33px"}
+  %center
+    %a{href: "/#{@user.twitter_handle}"}
+      %img.img-circle.dp{height: "73", name: "-", src: "#{@user.image_url}", width: "73"}
+    - if @user == @auth_user
+      %h4="Your Picks"
+    - else
+      %h4= "#{@user.twitter_handle}'s Picks"
+- @user.picks.each do | pick |
+  - favourite = @user.favourites.first(:category => pick.category)
+  - if pick.is_open
+    .panel.panel-warning
+      .panel-heading
+        %h2.panel-title #{pick.category.name}
+      %ul.list-group
+        %li.list-group-item
+          %b
+            picked:
+          #{pick.nominee.name}
+        %li.list-group-item
+          %b
+            faved:
+          - if favourite.nil?
+            none
+          - else
+            #{favourite.nominee.name}
+  - elsif pick.is_correct
+    .panel.panel-success
+      .panel-heading
+        %p.pull-right
+          %span.glyphicon.glyphicon-ok
+        %h2.panel-title #{pick.category.name}
+      %ul.list-group
+        %li.list-group-item
+          %b
+            picked:
+          #{pick.nominee.name}
+        %li.list-group-item
+          %b
+            faved:
+          - if favourite.nil?
+            none
+          - else
+            #{favourite.nominee.name}
+  - else
+    .panel.panel-danger
+      .panel-heading
+        %p.pull-right
+          %span.glyphicon.glyphicon-remove
+        %h2.panel-title #{pick.category.name}
+      %ul.list-group
+        %li.list-group-item
+          %b
+            picked:
+          #{pick.nominee.name}
+        %li.list-group-item
+          %b
+            faved:
+          - if favourite.nil?
+            none
+          - else
+            #{favourite.nominee.name}
+        %li.list-group-item
+          %b
+            winner:
+          #{pick.category.winner.name}

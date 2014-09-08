@@ -1,0 +1,88 @@
+.page-header
+  %h2 Pick your Winners
+%form{ :action => "/#{@username}/picks", :method => "post", :id => "pickForm"}
+  - if @user.picked == 1
+    - @categories.each do | category |
+      - category_name = category.name
+      .panel.panel-default
+        .panel-heading{:id => "#{category_name}" }
+          %h3.panel-title #{category_name}
+        %table.table.table-condensed.table-hover
+          %thead
+            %tr
+              %th #
+              %th Your Pick
+              %th Personal Favourite
+          %tbody
+            %fieldset
+              - category.nominees.each_with_index do | nominee, index |
+                - pick = @user.picks.first(:category => category)
+                - favourite = @user.favourites.first(:category => category)
+                %tr
+                  %td #{index + 1}
+                  %td
+                    - if nominee == pick.nominee
+                      %label{ :style => "font-weight: normal; display: block; margin-left: 20px;"}
+                        %input{ :style => "float: left; margin-left: -20px; margin-right: 7px;", :type => "radio", :name => "#{category_name}", :value => "#{nominee.name}", :class => "required", :id => "nominee_radio", :checked => "checked"}
+                          #{nominee.name}
+                    - else
+                      %label{ :style => "font-weight: normal; display: block; margin-left: 20px;"}
+                        %input{ :style => "float: left; margin-left: -20px; margin-right: 7px;", :type => "radio", :name => "#{category_name}", :value => "#{nominee.name}", :class => "required", :id => "nominee_radio"}
+                        #{nominee.name}
+                  %td
+                    - if !favourite.nil? && nominee == favourite.nominee
+                      %label{ :style => "font-weight: normal; display: block; margin-left: 20px;"}
+                        %input{ :style => "float: left; margin-left: -20px; margin-right: 7px;", :type => "radio", :name => "#{category_name}_fav", :value => "#{nominee.name}", :id => "nominee_radio", :checked => "checked"}
+                          #{nominee.name}
+                    - else
+                      %label{ :style => "font-weight: normal; display: block; margin-left: 20px;"}
+                        %input{ :style => "float: left; margin-left: -20px; margin-right: 7px;", :type => "radio", :name => "#{category_name}_fav", :value => "#{nominee.name}", :id => "nominee_radio"}
+                          #{nominee.name}
+            %label{ :for => "#{category_name}", :class => "error", :style => "display: none; color: red"}= "you have to pick a winner!"
+  - else
+    - @categories.each do | category |
+      .panel.panel-default
+        .panel-heading{:id => "#{category.name}" }
+          %h3.panel-title #{category.name}
+        %table.table.table-condensed.table-hover
+          %thead
+            %tr
+              %th #
+              %th Your Pick
+              %th Personal Favourite
+          %tbody
+            %fieldset
+              - category.nominees.each_with_index do | nominee, index |
+                %tr
+                  %td #{index + 1}
+                  %td
+                    %label{ :style => "font-weight: normal; display: block; margin-left: 20px;"}
+                      %input{ :style => "float: left; margin-left: -20px; margin-right: 7px;", :type => "radio", :name => "#{category.name}", :value => "#{nominee.name}", :class => "required", :id => "nominee_radio"}
+                        #{nominee.name}
+                  %td
+                    %label{ :style => "font-weight: normal; display: block; margin-left: 20px;"}
+                      %input{ :style => "float: left; margin-left: -20px; margin-right: 7px;", :type => "radio", :name => "#{category.name}_fav", :value => "#{nominee.name}", :id => "nominee_radio"}
+                        #{nominee.name}
+            %label{ :for => "#{category.name}", :class => "error", :style => "display: none; color: red"}= "you have to pick a winner!"
+  %button.btn.btn-default.btn-lg{type: "submit", name: "pick"}
+    Submit Your Picks
+  :javascript
+    $(document).ready(function () {
+      $("input:radio").click(function(){
+        $(this).closest("div.panel.panel-default").children().first().css("background-color", "#f5f5f5")
+      });
+
+      $("#pickForm").validate({
+        showErrors: function(errorMap, errorList) {
+          var i, length = errorList.length;
+          var el;
+          var selector;
+
+          for (i = 0; i < length; i++) {
+              el = errorList[i].element;
+              $("[id='"+el.name+"']").css("background-color", "#f2dede");
+          }
+        }
+      });
+    });
+%br

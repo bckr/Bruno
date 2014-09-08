@@ -1,0 +1,18 @@
+.page-header
+  %h2 Update Winners
+%form{ :action => "/admin/update/winners", :method => "post" }
+  - @categories.each_with_index do | category, index |
+    .panel.panel-default
+      .panel-heading
+        %h3.panel-title="#{index + 1}. #{category.name}"
+      .panel-body
+        - category.nominees.each do | nominee |
+          - if category.winner == nominee
+            %input{ :type => "radio", :name => "#{category.name}", :value => "#{nominee.name}", :checked => "checked"}= " " + nominee.name
+            %br
+          - else
+            %input{ :type => "radio", :name => "#{category.name}", :value => "#{nominee.name}"}= " " + nominee.name
+            %br
+  %button.btn.btn-default.btn-lg{type: "submit", name: "update"}
+    Update
+%br
