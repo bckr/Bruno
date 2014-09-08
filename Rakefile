@@ -65,7 +65,17 @@ namespace :db do
   task :populate_dummy => [:populate] do
 
     @all_categories = Category.all
-    @user = { "TheRealBaker" => "Nils Becker", "die_krabbe" => "die_krabbe", "The_Smoking_GNU" => "Michael", "timbckr" => "Tim Becker", "peternoster" => "Peter Schneider", "freedika" => "annika stelter", "JerikoOne" => "Christoph Boecken", "iheartpluto" => "Nils", "marthadear" => "anne wizorek" }
+    @user = {
+      "TheRealBaker" => "Nils Becker",
+      "adalovelace" => "Ada Lovelace",
+      "gracehopper" => "Grace Hopper",
+      "alanturing" => "Alan Turing",
+      "konradzuse" => "Konrad Zuse",
+      "jeanbartik" => "Jean Bartik",
+      "barbaraliskov" => "Barbara Liskov",
+      "jeannettewing" => "Jeannette Wing",
+      "gottfriedleibniz" => "Gottfried Leibniz"
+    }
 
     User.transaction do | t |
       1.times do
