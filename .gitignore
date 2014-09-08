@@ -1,5 +1,5 @@
 .bundle/
-/db/
+/db/nominees.json
 /public/cache/
 /log
 /tmp
