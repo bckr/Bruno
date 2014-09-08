@@ -4,7 +4,7 @@ session_secret:       totallyrandomsessionsecret
 
 admin_twitter_handle: AdminTwitterHandle
 
-twitter_api_key:			YourTwitterAPIKey
+twitter_api_key:      YourTwitterAPIKey
 twitter_api_secret:   YourTwitterAPISecret
 
 database_adapter:     postgres
