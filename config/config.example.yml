@@ -12,5 +12,3 @@ database_host:        localhost
 database_user:        dbuser
 database_name:        dbname
 database_password:    dbpassword
-
-
