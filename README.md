@@ -1,11 +1,11 @@
-Akademos
+Bruno
 =======
 
-Akademos lets you set up your own voting system for award shows like the Oscars. Authentication is handled via Twitter. Akademos uses the [Sinatra Framework](http://www.sinatrarb.com/) and [Postgres](http://www.postgresql.org/) as its database. For a live example take a look at [Oscar Picks](http://oscar-picks.com). This is my first Ruby project ✌️
+Bruno lets you set up your own polling system for award shows like the Oscars. Authentication is handled via Twitter. Bruno uses the [Sinatra Framework](http://www.sinatrarb.com/) and [Postgres](http://www.postgresql.org/) as its database. For a live example take a look at [Oscar Picks](http://oscar-picks.com). This is my first Ruby project ✌️
 
 ## Example
 
-![](http://nilsbecker.s3.amazonaws.com/akademos_preview.png)
+![](http://nilsbecker.s3.amazonaws.com/bruno_preview.png)
 
 ## Initial Setup
 
@@ -13,7 +13,7 @@ Akademos lets you set up your own voting system for award shows like the Oscars.
 
 2. Run `bundle install` to install all necessary dependencies 
 
-3. Fill out the configuration file. The config folder holds an example configuration file which should be self-explanatory. The `admin_twitter_handle` determines which user gets admin privileges to update the winners for each category and lock the voting.
+3. Fill out the configuration file. The config folder holds an example configuration file which should be self-explanatory. The `admin_twitter_handle` determines which user gets admin privileges to update the winners for each category and lock the voting process.
 
 4. The categories and their respective nominees for the voting are provided by a simple json file called `nominees.json`
 

@@ -7,7 +7,7 @@ require 'data_mapper'
 require 'haml'
 require_relative 'model'
 
-class Akademos < Sinatra::Base
+class Bruno < Sinatra::Base
   register Sinatra::ConfigFile
   register(Sinatra::Cache)
 
