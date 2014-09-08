@@ -15,7 +15,7 @@ class Voty < Sinatra::Base
     config_file 'config/config.yml'
     TWITTER_API_KEY = settings.twitter_api_key
     SECRET = settings.twitter_api_secret
-    EXPIRE_AFTER = settings.expire_after
+    EXPIRE_AFTER = 2592000
     DOMAIN = settings.domain
     PAGE_TITLE = settings.page_titel
 
